@@ -920,14 +920,14 @@ input[type=radio] {
     background-image: url("./img/wall.jpg");
   }
   
-  .cardps:hover .cardps-img {
+/*   .cardps:hover .cardps-img {
     scale: 0.85;
     filter: brightness(0.65);
   }
   .cardps:nth-child(2):hover > .cardps-img-var {
     background-size: 100%;
     filter: grayscale(0.7);
-  }
+  } */
   
   
   
