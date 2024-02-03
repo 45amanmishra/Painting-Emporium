@@ -979,7 +979,7 @@ input[type=radio] {
     transform: translate(-105%, 105%);
   }
   
-  .cardps:hover .cardps-box {
+/*   .cardps:hover .cardps-box {
     opacity: 1;
     transform: translate(0, 0);
   }
@@ -989,8 +989,22 @@ input[type=radio] {
   }
   .cardps:hover .box-var {
     scale: 1;
+  } */
+
+.cardps-box {
+    opacity: 1;
+    transform: translate(0, 0);
   }
   
+  .box-var {
+    scale: 0;
+    transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  
+  .box-var {
+    scale: 1;
+  }
+
   .box-1,
   .box-4 {
     clip-path: polygon(
