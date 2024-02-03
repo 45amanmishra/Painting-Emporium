@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ecf4fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Ensure items are centered and stacked vertically */
+}
+
+.container {
+  width: auto; /* Allows the container to grow with its content */
+  max-width: 80%; /* Maximum width to prevent it from getting too large */
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows content to wrap */
+}
+
+h1 {
+  text-align: center;
+  width: 100%; /* Ensure the heading spans the full width */
+}
+
+.img-gallery {
+  display: flex; /* Using flex to allow images to line up and wrap */
+  flex-wrap: wrap; /* Allows images to wrap within the container */
+  gap: 30px; /* Maintains gap between images */
+  justify-content: center; /* Center images within the gallery */
+}
+
+.img-gallery > img {
+  max-width: 100%; /* Allows images to be responsive */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.img-gallery img:hover {
+  transform: scale(0.85); /* Corrected the property to transform */
+  box-shadow: 10px 26px 60px rgba(68, 77, 136, 0.3);
+}
